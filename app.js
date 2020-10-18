@@ -1,22 +1,23 @@
-```
-Maintain entire application business logic.
-```
+// ```
+// Maintain entire application business logic.
+// ```
 const express = require('express');
 const http = require('http');
 const scraper = require('./controller/scraper')
+const database = require('./controller/dbio')
+const appConfig = require('./config/scraper')
 
 const app = express();
-app.set('port', process.env.PORT || 8080);
+app.set('port', appConfig.port);
 
-http.globalAgent.maxSockets = 5;
+http.globalAgent.maxSockets = appConfig.maxConnections;
 
-app.get('/', scraper);
+// app.get('/', scraper);
 
-// Server starts.
 app.listen(app.get('port'), () => {
     console.log(
-        'App Running on: %d',
+        '\nApp Running on: %d',
         app.get('port')
     );
-    console.log('-------Press CTRL-C to stop---------\n');
+    console.log('\nPress CTRL-C to stop\n');
 });
