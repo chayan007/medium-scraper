@@ -1,7 +1,8 @@
-```
-Store all scraper (or app) related configurations.
-```
+// ```
+// Store all scraper (or app) related configurations.
+// ```
 module.exports = {
     BaseURL: 'https://medium.com',
-    maxConnections: 5
+    maxConnections: 5,
+    port: 8080
 }
