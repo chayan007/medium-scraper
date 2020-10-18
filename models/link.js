@@ -14,9 +14,4 @@ const linkSchema = new Schema({
     }]
 });
 
-const Link = module.exports = mongoose.model('Link', linkSchema);
-
-module.exports.getByURL = function (url, callback) {
-    let query = { url: url }
-    Link.find(query, callback)
-}
+module.exports = mongoose.model('Link', linkSchema);
