@@ -23,7 +23,7 @@ This is the most basic scraping tool created in express to harvest all internal 
 
 - Clone the repository in your local machine.
 - `npm install` to install all dependencies.
-- nodemon `app.js` to trigger the server.
+- `nodemon app.js` to trigger the server.
 
 ##### Note: 
 
