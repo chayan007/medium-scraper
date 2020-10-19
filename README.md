@@ -1,3 +1,5 @@
+![Eraser Head](readme-fun.jpeg?raw=true "Aizawa Sensei")
+
 ## Medium Recursive Scraper Project
 
 This is the most basic scraping tool created in express to harvest all internal `href` URLs of medium.
