@@ -4,7 +4,6 @@
 const express = require('express');
 const http = require('http');
 const scraper = require('./controller/scraper')
-const database = require('./controller/dbio')
 const appConfig = require('./config/scraper')
 
 const app = express();
@@ -12,7 +11,7 @@ app.set('port', appConfig.port);
 
 http.globalAgent.maxSockets = appConfig.maxConnections;
 
-// app.get('/', scraper);
+const _ = scraper.medium;
 
 app.listen(app.get('port'), () => {
     console.log(

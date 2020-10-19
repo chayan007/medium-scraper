@@ -3,6 +3,7 @@
 // ```
 const Crawler = require('crawler');
 const cheerio = require('cheerio');
+const LinkDbIO = require('./dbio')
 
 const appConfig = require('../config/scraper')
 
@@ -18,8 +19,8 @@ let medium = new Crawler({
                 const href = a.attribs.href;
                 if (href) {
                     if (href.startsWith('/')) {
-                        console.log(result.request.host + href);
                         const followURL = appConfig.BaseURL + href
+                        LinkDbIO.validateAndPush(followURL);
                         medium.queue(followURL);
                     }
                 }
@@ -27,5 +28,9 @@ let medium = new Crawler({
         }
     }
 });
-
+console.log('Scraping Initiated !')
 medium.queue(appConfig.BaseURL);
+
+module.exports = {
+    medium: medium
+}

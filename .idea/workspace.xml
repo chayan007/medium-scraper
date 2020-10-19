@@ -3,6 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="5873c400-eaa3-44b1-bc55-81cf88d6a96d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/dbio.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/dbio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/scraper.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/scraper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/History.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/api/attributes.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/api/attributes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/api/css.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/api/css.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/api/forms.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/api/forms.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/api/manipulation.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/api/manipulation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/api/traversing.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/api/traversing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/cheerio.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/cheerio.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/parse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/static.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/static.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/lib/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/cheerio/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/cheerio/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -32,6 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="10.17.40" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ecommerce-Nodejs" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -45,11 +60,23 @@
       <option name="presentableId" value="Default" />
       <updated>1602945450233</updated>
       <workItem from="1602945453482" duration="2831000" />
-      <workItem from="1603009706199" duration="1411000" />
+      <workItem from="1603009706199" duration="7862000" />
+      <workItem from="1603087865890" duration="1069000" />
+      <workItem from="1603097756515" duration="2397000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl" timestamp="1603018491346">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="502" y="155" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1603018491346" />
+    <state x="410" y="136" width="618" height="522" key="find.popup" timestamp="1603099414482">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="410" y="136" width="618" height="522" key="find.popup/72.27.1294.741@72.27.1294.741" timestamp="1603099414482" />
   </component>
 </project>

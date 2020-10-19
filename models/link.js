@@ -7,9 +7,10 @@ const linkSchema = new Schema({
         unique: true
     },
     totalRef: {
-        type: Number
+        type: Number,
+        default: 1
     },
-    param: [{
+    parameters: [{
         type: String
     }]
 });
