@@ -2,36 +2,30 @@
 // Handle the scraper logic.
 // ```
 const Crawler = require('crawler');
-const fs = require('fs');
+const cheerio = require('cheerio');
 
 const appConfig = require('../config/scraper')
 
-let jsonArray = [];
 
 let medium = new Crawler({
     maxConnections : appConfig.maxConnections,
     callback : function (error, result, done) {
-        const $ = result.$;
-
-        const links = $("a");
-        links.each(function(i, link) {
-            anchors[i] = $(link).attr("href");
-            console.log("Anchor: " + link);
-        });
-
-        let rangeNumber = $($('.range')[0]).text().split(' ')[2]
-
-        console.log("We are on item range: " + rangeNumber)
-
-        let toQueueUrl = appConfig.BaseURL + rangeNumber
-
-        if (parseInt(rangeNumber) < 1000) {
-            medium.queue(toQueueUrl);
+        if (error) {
+            console.log(error)
         } else {
-            fs.appendFile('craigsListData.txt', JSON.stringify(jsonArray), function (err) {
-                if (err) throw err;
-                console.log('The "data to append" was appended to file!');
+            const $ = cheerio.load(result.body);
+            $('a').each(function (i, a) {
+                const href = a.attribs.href;
+                if (href) {
+                    if (href.startsWith('/')) {
+                        console.log(result.request.host + href);
+                        const followURL = appConfig.BaseURL + href
+                        medium.queue(followURL);
+                    }
+                }
             });
         }
     }
 });
+
+medium.queue(appConfig.BaseURL);
